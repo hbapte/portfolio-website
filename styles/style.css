@@ -1,10 +1,14 @@
 
 :root {
     --background-color: #1f242d;
+    --background-color2: #1E293B;
     --primary-color: #0ef;
     --white-color: #fff;
     --black-color: #111;
+    --text-color: rgb(203, 213, 225);
     --secondary-color:rgb(160, 174, 192);
+    --third-color: #CBD5E1;
+    --fourth-color: #334155;
 
     --header-font-size : 1.5rem;
     --header-text-decoration: undeline;
@@ -39,7 +43,7 @@ body {
     left: 7;
     top:6;
     width: 100%;
-    background: #242930;
+    background: #1c2025;
     z-index: 100;
     
 }
@@ -82,28 +86,62 @@ body {
 }
 
 /* Menu bar  */
-
-#nav-toggle{
-    position: absolute;
+.nav-container {
+    margin: 13px -35px 0 0;
+    display: none;
     
 }
 
-.icon-burger {
-    position: fixed;
-    right: 15%;
-    top :50%;
-    display:none;
-
-
+.label-check{
+    display: none;
 }
 
-nav .icon-burger .line {
-    width:55px;
-    height:5px;
-    background: yellow;
-    margin: 1px;
-
+.hamburger-label{
+    width: 90px;
+    height: 58px;
+    display:block;
+    cursor: pointer;
 }
+
+.hamburger-label div {
+    width: 38px;
+    height: 2.5px;
+    background-color: var(--third-color);
+    position: absolute;
+}
+
+.line1 {
+    transition: all .3s;
+}
+
+.line2 {
+    margin: 9px 0 0 0;
+    transition: .3s;
+}
+
+.line3 {
+    margin: 18px 0 0 0;
+    transition: 0.3s;
+}
+
+#label-check:checked + .hamburger-label .line1 {
+    transform:rotate(-206deg) scaleX(.55) translate(20px, 1px);
+}
+
+#label-check:checked + .hamburger-label .line3 {
+    transform:rotate(206deg) scaleX(.55) translate(20px,-1px);
+    border-radius: 0px 25px 25px 25px;
+}
+
+#label-check:checked + .hamburger-label .line2 {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width:32px;
+    margin-right: 25px;
+}
+
+
+
 
 /* links */
 a:link {
@@ -234,7 +272,7 @@ section {
 
 /* About section  */
 .about {
-    height:100vh
+    height:100vh;
 }
 
 .about-header {
@@ -254,8 +292,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin : auto ;    
-    
+    margin : auto ;
+     
 } 
 
 
@@ -308,13 +346,25 @@ section {
 
 .skill-header {
     margin:2rem;
+    letter-spacing: .5px;
     font-family: 'Poppins', sans-serif;
     text-decoration: underline;
     text-underline-position: under;
-    text-decoration-color: rgb(160, 174, 192, 0.8v  );
+    text-decoration-color: rgb(160, 174, 192, 0.8);
     text-align: center;
     color: var(--secondary-color);
     font-size: var(--header-font-size);
+  
+}
+
+.skill-header:hover {
+    text-decoration: none;
+    background-color: #1E293B;
+    border-radius: 5px;
+    width:8rem;
+    margin: 2rem auto;
+    text-align: center;
+    
 }
 
 .s-container{
@@ -345,6 +395,7 @@ margin: 1rem auto;
 
 .skills h4 {
     margin: 1rem 0; 
+    border-bottom: 1px #343b49 solid;
 
 
 }
@@ -471,6 +522,7 @@ margin: 1rem auto;
 .blog-container {
     display: flex;
     flex-direction: column;
+    overflow:hidden; 
    
 }
 
@@ -484,12 +536,14 @@ margin: 1rem auto;
 }
 
 .b-card {
-    display: flex;
+    display: grid;
     background: #343b49;
     justify-content:space-between;
     align-items: center;
     margin: 1rem; 
-    border-radius: 6px;    
+    border-radius: 6px; 
+    overflow: hidden;
+     
     
 }
 
@@ -783,6 +837,10 @@ label{
     margin: 1rem;
 }
 
+input::invalid{
+    color:red;
+}
+
 input {
     background: transparent;
     border-radius: 4px;
@@ -847,7 +905,8 @@ textarea {
 
 /* footer section  */
 footer {
-    margin-top: 5vh;
+    background-color: #040408;
+    margin-top: 20px;
     height: 30px;
 
 }
@@ -880,9 +939,13 @@ footer p {
         --header-font-size:1em;
     }
 
-    .navbar { 
+    .nav{ 
         display: none;
          }
+
+        .nav-container{
+            display: block;
+        }
 
     #home {
         display:flex;
@@ -1072,5 +1135,7 @@ footer p {
     text-decoration: none;
 
 }
+
+
 
 }
