@@ -15,6 +15,9 @@ function showLoader() {
   
   // Event listener for when the website starts loading
   window.addEventListener("beforeunload", function() {
+    if (document.getElementById("loader").style.display === "block") {
+      return; // Cancel the event and allow the user to leave the page
+    }
     showLoader(); // Show the loader when the website starts loading
   });
   
