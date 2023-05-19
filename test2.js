@@ -1,26 +1,3 @@
-// var typed = new Typed('.typed', {
-//     strings: ['Frontend Developer', 'Blogger'],
-//     typeSpeed: 200,
-//     backSpeed: 200,
-//     backDelay: 1000,
-//     loop: true
-//   });
-
-// var swiper = new Swiper(".mySwiper", {
-//     slidesPerView: 1,
-//     grabCursor: true,
-//     loop: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
-
-
 /*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
@@ -51,3 +28,24 @@ const linkAction = () =>{
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]')
+    
+const scrollActive = () =>{
+  	const scrollY = window.pageYOffset
+
+	sections.forEach(current =>{
+		const sectionHeight = current.offsetHeight,
+			  sectionTop = current.offsetTop - 58,
+			  sectionId = current.getAttribute('id'),
+			  sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
+
+		if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+			sectionsClass.classList.add('active-link')
+		}else{
+			sectionsClass.classList.remove('active-link')
+		}                                                    
+	})
+}
+window.addEventListener('scroll', scrollActive)

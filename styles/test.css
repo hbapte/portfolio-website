@@ -7,3 +7,28 @@ body {
     margin: 400px;
 
 }
+
+
+
+
+.navbar {
+    position: fixed;
+    top:0;
+    right: 0;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    width: 50%;
+    height: 100%;
+    padding: 4.5rem 0 0 3rem;
+    transition: right .4s;
+}
+
+nav .li {
+    display: flex;
+
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition:color .4s;
+}
