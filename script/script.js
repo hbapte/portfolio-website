@@ -1,11 +1,13 @@
 // Function to show the loader
 function showLoader() {
     document.getElementById("loader").style.display = "block";
+    document.querySelectorAll("*").forEach(el => el.style.opacity = 0.5);
   }
   
   // Function to hide the loader
   function hideLoader() {
     document.getElementById("loader").style.display = "none";
+    document.querySelectorAll("*").forEach(el => el.style.opacity = 1);
   }
   
   // Event listener when the page finishes loading
