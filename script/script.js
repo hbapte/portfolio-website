@@ -1,15 +1,26 @@
+// Function to show the loader
+function showLoader() {
+    document.getElementById("loader").style.display = "block";
+  }
+  
+  // Function to hide the loader
+  function hideLoader() {
+    document.getElementById("loader").style.display = "none";
+  }
+  
+  // Event listener when the page finishes loading
+  window.addEventListener("load", function() {
+    hideLoader(); // Hide the loader when the page finishes loading
+  });
+  
+  // Event listener for when the website starts loading
+  window.addEventListener("beforeunload", function() {
+    showLoader(); // Show the loader when the website starts loading
+  });
+  
 
-    // Show loader when the page starts loading
-    window.addEventListener('load', function() {
-        var loader = document.getElementById('loader');
-        loader.style.display = 'block';
-      });
-      
-      // Hide loader when the content finishes loading
-      window.addEventListener('DOMContentLoaded', function() {
-        var loader = document.getElementById('loader');
-        loader.style.display = 'none';
-      });
+
+
 
 // var typed = new Typed('.typed', {
 //     strings: ['Frontend Developer', 'Blogger'],
