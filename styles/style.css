@@ -646,7 +646,7 @@ margin: 1rem auto;
 
 .testimonial {
     position:relative;
-    max-width: 95%;
+    max-width: 100%;
     color:#fff;
     width:100%;
     background:#2a313f;
@@ -680,7 +680,7 @@ img[class="t-pic"] {
 .slide p{
  color: #fff;
 
-  padding: 0 110px;
+  padding: 0 10rem;
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
