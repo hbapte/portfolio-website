@@ -1,60 +1,84 @@
 // Function to show the loader
 function showLoader() {
-    document.getElementById("loader").style.display = "block";
-    document.querySelectorAll("*").forEach(el => el.style.opacity = 0.5);
-  }
-  
-  // Function to hide the loader
-  function hideLoader() {
-    document.getElementById("loader").style.display = "none";
-    document.querySelectorAll("*").forEach(el => el.style.opacity = 1);
-  }
-  
-  // Event listener when the page finishes loading
-  window.addEventListener("load", function() {
-    hideLoader(); // Hide the loader when the page finishes loading
-  });
-  
-  // Event listener for when the website starts loading
-  window.addEventListener("beforeunload", function() {
-    if (document.getElementById("loader").style.display === "block") {
-      return; // Cancel the event and allow the user to leave the page
-    }
-    showLoader(); // Show the loader when the website starts loading
-  });
-  
-
-
-
-
-
-  const contactForm = document.getElementById('contact-form'),
-        contactMessage = document.getElementById('contact-message'),
-        errorMessage = document.getElementById('error-message')
-
-const sendEmail = (e) => {
-  e.preventDefault()
-
-  emailjs.sendForm("service_xke6y8e","template_x3hwaq5","#contact-form","J6Lgb71e3Yjbw7vhN")
-  .then(() =>{
-     contactMessage.textContent = 'Message sent successfully!'
-
-     setTimeout(() => {
-      contactMessage.textContent = "" 
-     }, 5000)
-
-     contactForm.reset()
-
-}, () => {
-  errorMessage.textContent = 'Message not sent (service error)!'
-})
+  document.getElementById("loader").style.display = "block";
+  document.querySelectorAll("*").forEach((el) => (el.style.opacity = 0.6));
 }
 
+// Function to hide the loader
+function hideLoader() {
+  document.getElementById("loader").style.display = "none";
+  document.querySelectorAll("*").forEach((el) => (el.style.opacity = 1));
+}
 
-  contactForm.addEventListener("submit", sendEmail)
+// Event listener when the page finishes loading
+window.addEventListener("load", function () {
+  hideLoader(); // Hide the loader when the page finishes loading
+});
 
+// Event listener for when the website starts loading
+window.addEventListener("beforeunload", function () {
+  if (document.getElementById("loader").style.display === "block") {
+    return; // Cancel the event and allow the user to leave the page
+  }
+  showLoader(); // Show the loader when the website starts loading
+});
 
+const contactForm = document.getElementById("contact-form"),
+  contactMessage = document.getElementById("contact-message"),
+  errorMessage = document.getElementById("error-message");
 
+const sendEmail = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .sendForm(
+      "service_xke6y8e",
+      "template_x3hwaq5",
+      "#contact-form",
+      "J6Lgb71e3Yjbw7vhN"
+    )
+    .then(
+      () => {
+        contactMessage.textContent = "Message sent successfully!";
+
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 5000);
+
+        contactForm.reset();
+      },
+      () => {
+        errorMessage.textContent = "Message not sent (service error)!";
+      }
+    );
+};
+
+contactForm.addEventListener("submit", sendEmail);
+
+// ScrollReveal().reveal("#home");
+
+// ScrollReveal().reveal("#about");
+// ScrollReveal().reveal("#skills");
+// ScrollReveal().reveal("#project");
+// ScrollReveal().reveal("#blog");
+// ScrollReveal().reveal("#testimonials");
+// ScrollReveal().reveal("#contact");
+
+const sr = ScrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 200,
+  // reset: true,
+});
+
+sr.reveal(`.home-content , .p-image, .social-media`);
+sr.reveal(`#about, .about-image, .timeline`);
+sr.reveal(`#skills`);
+sr.reveal(`#project`);
+sr.reveal(`#blog`);
+sr.reveal(`#testimonials`);
+sr.reveal(`#contact `);
 
 // var typed = new Typed('.typed', {
 //     strings: ['Frontend Developer', 'Blogger'],
@@ -77,9 +101,6 @@ const sendEmail = (e) => {
 //       prevEl: ".swiper-button-prev",
 //     },
 //   });
-
-
-
 
 // /*=============== SHOW MENU ===============*/
 // const navMenu = document.getElementById('nav-menu'),
