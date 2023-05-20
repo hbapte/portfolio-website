@@ -2,32 +2,26 @@
 <html lang="en">
 
 <head>
-   
-
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMHLLYXHQZ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-YMHLLYXHQZ');
-    </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is my personal website">
-    <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
-    <link rel="icon" href="images/favicon.png" type="image/png">
-    
-        
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/png">          
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="styles/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMHLLYXHQZ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-YMHLLYXHQZ');
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <title>Ishimwe Jean Baptiste</title>
 </head>
@@ -416,20 +410,20 @@
             </div>
             <div class="form-part">
                 <div class="form">
-                    <form id="form" action="/">
+                    <form id="form" action="/contact" method="post">
                         <fieldset>
                             <legend>Get in touch - send me a message </legend>
                             <div class="inputs">
                                 <div class="form-group">
-                                    <input type="text" id="names" required placeholder="Names" /><label for="mames">
+                                    <input type="text" id="names" name="name" required placeholder="Names" /><label for="mames">
                                         Your Names </label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" id="email" required placeholder="Email" /><label for="email">
+                                    <input type="email" id="email" name="email" required placeholder="Email" /><label for="email">
                                         Email </label>
                                 </div>
                                 <div class="form-group">
-                                    <textarea id="message" placeholder="Message"></textarea> <label for="message">
+                                    <textarea id="message" name="message" placeholder="Message"></textarea> <label for="message">
                                         message </label>
                                 </div>
 
@@ -437,8 +431,12 @@
                                     <button type="submit" class="submit"> Send </button>
                                 </div>
                             </div>
+                            <div id="success-message"> Hello</div>
+                            <div id="error-message"> hey </div>
                         </fieldset>
                     </form>
+
+                  
                 </div>
                 <div class="subscribe">
                     <p> You can also subscribe to my newsletter</p>

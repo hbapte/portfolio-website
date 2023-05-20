@@ -940,7 +940,7 @@ textarea {
 
 .subscribe p {
     margin: 1.5rem 0 1rem 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: left;
   }
 
@@ -960,6 +960,20 @@ footer p {
     font-size: 13px;
     margin-top: 4px;
 
+}
+
+#success-message {
+    text-align: center;   
+    color: green;
+    display: none;
+   
+   
+}
+
+#error-message {
+    text-align: center;
+    color: red;
+    display: none;
 }
 
 
