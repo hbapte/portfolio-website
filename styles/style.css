@@ -964,10 +964,13 @@ footer p {
 
 .contact__message {
     text-align: center;   
-    
+    color:#0ef;
 }
    
-
+.error__message {
+    text-align: center;
+    color:red;
+}
 
 
 /* Text Gradient  */

@@ -29,7 +29,8 @@ function showLoader() {
 
 
   const contactForm = document.getElementById('contact-form'),
-        contactMessage = document.getElementById('contact-message')
+        contactMessage = document.getElementById('contact-message'),
+        errorMessage = document.getElementById('error-message')
 
 const sendEmail = (e) => {
   e.preventDefault()
@@ -45,7 +46,7 @@ const sendEmail = (e) => {
      contactForm.reset()
 
 }, () => {
-  contactMessage.textContent = 'Message not sent (service error)!'
+  errorMessage.textContent = 'Message not sent (service error)!'
 })
 }
 
