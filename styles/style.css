@@ -962,19 +962,12 @@ footer p {
 
 }
 
-#success-message {
+.contact__message {
     text-align: center;   
-    color: green;
     display: none;
-   
-   
 }
+   
 
-#error-message {
-    text-align: center;
-    color: red;
-    display: none;
-}
 
 
 /* Text Gradient  */

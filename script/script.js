@@ -28,37 +28,30 @@ function showLoader() {
 
 
 
-  const client = new EmailJS("J6Lgb71e3Yjbw7vhN", "T_GBs1Zf33wMjGxgHUMKy");
+  const contactForm = document.getElementById('contact-form'),
+        contactMessage = document.getElementById('contact-message')
 
-document.querySelector("form").addEventListener("submit", (event) => {
-  event.preventDefault();
+const sendEmail = (e) => {
+  e.preventDefault()
 
-  const name = document.querySelector("input[name=name]").value;
-  const email = document.querySelector("input[name=email]").value;
-  const message = document.querySelector("textarea[name=message]").value;
+  emailjs.sendForm("service_xke6y8e","template_x3hwaq5","#contact-form","J6Lgb71e3Yjbw7vhN")
+  .then(() =>{
+     contactMessage.textContent = 'Message sent successfully!'
 
-  client.send({
-    to: "ijbapte@gmail.com",
-    from: "ijbapte@gmail.com.com",
-    subject: "This is a test email from " + name,
-    text: message,
-  });
+     setTimeout(() => {
+      contactMessage.textContent = "" 
+     }, 5000)
 
-  // Add a success message
-  document.getElementById("success-message").textContent = "Email sent successfully!";
-  document.getElementById("success-message").style.display = "block";
+     contactForm.reset()
 
-  // Clear the form
-  document.querySelector("input[name=name]").value = "";
-  document.querySelector("input[name=email]").value = "";
-  document.querySelector("textarea[name=message]").value = "";
-});
+}, () => {
+  contactMessage.textContent = 'Message not sent (service error)!'
+})
+}
 
-// Add an error message
-client.on("error", (error) => {
-  document.getElementById("error-message").textContent = error.message;
-  document.getElementById("error-message").style.display = "block";
-});
+
+  contactForm.addEventListener("submit", sendEmail)
+
 
 
 
