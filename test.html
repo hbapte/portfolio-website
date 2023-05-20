@@ -1,0 +1,136 @@
+
+    <!-- Content goes here -->
+    
+    <!DOCTYPE html>
+    <html>
+    <head>
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            /* Add some basic styling */
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            
+            /* Style the navbar */
+            .navbar {
+                background-color: #333;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 20px;
+            }
+            
+            /* Style the navbar links */
+            .navbar a {
+                color: #f2f2f2;
+                text-decoration: none;
+                padding: 10px;
+            }
+            
+            /* Style the logo */
+            .navbar .logo {
+                color: #f2f2f2;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+            /* Style the hamburger icon */
+            .navbar .hamburger {
+                display: none;
+                color: #f2f2f2;
+                cursor: pointer;
+            }
+            
+            /* Style the close icon */
+            .navbar .close {
+                display: none;
+                color: #f2f2f2;
+                cursor: pointer;
+            }
+            
+            /* Change the color of navbar links on hover */
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            
+            /* Add media queries for responsiveness */
+            @media screen and (max-width: 600px) {
+                .navbar a {
+                    display: none;
+                }
+                
+                .navbar .hamburger {
+                    display: block;
+                }
+                
+                .navbar .close {
+                    display: none;
+                }
+                
+                .navbar.responsive .hamburger {
+                    display: none;
+                }
+                
+                .navbar.responsive .close {
+                    display: block;
+                }
+                
+                .navbar.responsive .nav-links {
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+                .navbar.responsive a {
+                    display: block;
+                    text-align: center;
+                }
+            }
+        </style>
+        <script>
+            function toggleNavbar() {
+                var navbar = document.getElementById("myNavbar");
+                var navLinks = document.getElementById("navLinks");
+                var hamburger = document.getElementById("hamburgerIcon");
+                var closeIcon = document.getElementById("closeIcon");
+                
+                if (navbar.className === "navbar") {
+                    navbar.className += " responsive";
+                    navLinks.className += " nav-links";
+                    hamburger.style.display = "none";
+                    closeIcon.style.display = "block";
+                } else {
+                    navbar.className = "navbar";
+                    navLinks.className = "";
+                    hamburger.style.display = "block";
+                    closeIcon.style.display = "none";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar" id="myNavbar">
+            <a href="#" class="logo">Logo</a>
+            <div id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="hamburger" id="hamburgerIcon" onclick="toggleNavbar()">
+                <i class='bx bx-menu'></i>
+            </a>
+            <a href="javascript:void(0);" class="close" id="closeIcon" onclick="toggleNavbar()">
+                <i class='bx bx-x'></i>
+            </a>
+        </div>
+        
+        <!-- Content goes here -->
+        
+      
+    </body>
+    </html>
+    
