@@ -80,8 +80,8 @@ body {
 .nav__toggle,
 .nav__close {
   display: flex;
-  font-size: 1.25rem;
-  color: hsl(228, 8%, 95%);
+  font-size: 2rem;
+  color: hsl(228, 8%, 100%);
   cursor: pointer;
 }
 
@@ -125,6 +125,10 @@ body {
   right: 1.5rem;
 }
 
+ .nav__toggle {
+  right: 2rem;
+ }
+
 /* Show menu */
 .show-menu {
   right: 0;
@@ -153,6 +157,16 @@ body {
   color: #0ef;
 }
 
+
+.nav-resume {
+  color: #0ef;
+  padding: 2px 4px;
+  margin-right: 1rem;
+  font-weight: 700;
+  background-color: var(--background-color2);
+  border: 1px solid #0ef;
+
+} 
 /* For medium devices */
 @media screen and (max-width: 768px) {
   .nav__menu {
@@ -172,15 +186,6 @@ body {
     display: none;
   }
 
-  .nav-resume {
-    color: #0ef;
-    padding: 2px 4px;
-    margin-right: 1rem;
-    font-weight: 700;
-    background-color: var(--background-color2);
-    border: 1px solid #0ef;
-
-  }
 
   .nav-resume:hover {
     transform: scale(1.01);
