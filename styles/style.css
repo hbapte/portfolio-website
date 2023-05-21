@@ -80,8 +80,8 @@ body {
 .nav__toggle,
 .nav__close {
   display: flex;
-  font-size: 2rem;
-  color: hsl(228, 8%, 100%);
+  font-size: 1.8rem;
+  color: hsl(228, 8%, 90%);
   cursor: pointer;
 }
 
@@ -95,7 +95,7 @@ body {
     background-color: hsl(0, 0%, 10%, 0.3);
     width: 50%;
     height: 100%;
-    padding: 2rem 0 0 2rem;
+    padding: 4rem 0 0 4rem;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     transition: right 0.4s;
@@ -125,9 +125,9 @@ body {
   right: 1.5rem;
 }
 
- .nav__toggle {
-  right: 2rem;
- }
+.nav__toggle {
+  margin-right: 0.4rem;
+}
 
 /* Show menu */
 .show-menu {
@@ -140,7 +140,7 @@ body {
 }
 
 .blur-header::after {
-  content: "";
+  content: '';
   position: absolute;
   width: 1000%;
   height: 100%;
