@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is my personal website">
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
-    <link rel="icon" href="images/favicon.png" type="image/png">          
+    <link rel="icon" href="images/favicon.png" type="image/png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="styles/swiper-bundle.min.css"> -->
     <link rel="stylesheet" href="styles/style.css">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-YMHLLYXHQZ"></script>
@@ -20,42 +20,57 @@
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-YMHLLYXHQZ');
-    </script>    
+    </script>
 
     <title>Ishimwe Jean Baptiste</title>
 </head>
 
-  <!-- LOADER  -->
- <div id="loader"></div>
- 
+<!-- LOADER  -->
+<!-- <div id="loader"></div> -->
+
 <body>
     <!-- Header -->
-    <header class="header">
-        <div class="logo">
-            <a href="#" class="logos"> <img src="images/logo4.png" alt="logo" class="logo-p" width="20%"> </a>
-        </div>
-        <nav class="navbar">
-            <ul class="nav">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a> </li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>            
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a> </li>
-                <li class="nav-item"><a href="#project" class="nav-link">Projects</a> </li>
-                <li class="nav-item"><a href="#blog" class="nav-link">Blogs</a> </li>
-                <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonial</a> </li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a> </li>
-            </ul>        
-        <div class="nav-container">
-            <input type="checkbox"  id="label-check" class="label-check">
-            <label for="label-check" class="hamburger-label">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            <label></label></label>
-        </div>
-            
-        </nav>
-     </header>    
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo"> <img src="images/logo4.png" alt="logo" class="logo-p" width="30%"> </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Blogs</a>
+                    </li>
+                   
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacts</a>
+                    </li>
+                    <li class="nav__item resume">
+                        <a href="https://rxresu.me/ijbapte/tech-ishimwe-jean-baptiste-" target="_blank"
+                            class="nav__link"> <button class="nav-resume">Resume</button></a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    
+                    <i class="bx bx-x"></i>
 
+                </div>
+            </div>
+            <div class="nav__togge" id="nav-toggle">
+                <i class="bx bx-bx-menu-alt-right"></i>
+               
+            </div>
+        </nav>
+    </header>
 
 
     <main>
@@ -75,9 +90,12 @@
                 </header>
                 <div class="social-media">
                     <a href="https://github.com/hbapte" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/hbapte" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://twitter.com/HBaptee" target="_blank" rel="noopener"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.Instagram.com/hbapte" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/hbapte" target="_blank" rel="noopener"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://twitter.com/HBaptee" target="_blank" rel="noopener"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a href="https://www.Instagram.com/hbapte" target="_blank" rel="noopener"><i
+                            class='bx bxl-instagram'></i></a>
                     <a href="https://www.linktr.ee/hbapte" target="_blank" rel="noopener">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                             <path fill="#0ef"
@@ -228,7 +246,8 @@
                         <h4>To Do App-React</h4>
                         <div class="project-links">
                             <a href=" " class="p-links" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
-                            <a href=" " class="p-links" target="_blank" rel="noopener"> <span class="material-symbols-outlined">
+                            <a href=" " class="p-links" target="_blank" rel="noopener"> <span
+                                    class="material-symbols-outlined">
                                     open_in_new
                                 </span></a>
                         </div>
@@ -247,7 +266,8 @@
                         <h4>To Do App-React</h4>
                         <div class="project-links">
                             <a href=" " class="p-links" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
-                            <a href=" " class="p-links" target="_blank" rel="noopener"> <span class="material-symbols-outlined">
+                            <a href=" " class="p-links" target="_blank" rel="noopener"> <span
+                                    class="material-symbols-outlined">
                                     open_in_new
                                 </span></a>
                         </div>
@@ -266,7 +286,8 @@
                         <h4>To Do App-React</h4>
                         <div class="project-links">
                             <a href=" " class="p-links" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
-                            <a href=" " class="p-links" target="_blank" rel="noopener"> <span class="material-symbols-outlined">
+                            <a href=" " class="p-links" target="_blank" rel="noopener"> <span
+                                    class="material-symbols-outlined">
                                     open_in_new
                                 </span></a>
                         </div>
@@ -285,7 +306,8 @@
                         <h4>To Do App-React</h4>
                         <div class="project-links">
                             <a href=" " class="p-links" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
-                            <a href=" " class="p-links" target="_blank" rel="noopener"> <span class="material-symbols-outlined">
+                            <a href=" " class="p-links" target="_blank" rel="noopener"> <span
+                                    class="material-symbols-outlined">
                                     open_in_new
                                 </span></a>
                         </div>
@@ -311,8 +333,8 @@
                     <div class="b-card">
                         <div class="blog-text">
                             <h4> Javascript array methods explained in 5 minutes</h4>
-                            <p> The increasing number of frontend developer tools out 
-                                
+                            <p> The increasing number of frontend developer tools out
+
                                 I've compiled five popular frontend... </p>
                             <p class="date"> 24th April,2023</p>
                         </div>
@@ -337,7 +359,7 @@
                     <div class="b-card">
                         <div class="blog-text">
                             <h4> Javascript array methods explained in 5 minutes</h4>
-                            <p> The increasing number of frontend developer tools out 
+                            <p> The increasing number of frontend developer tools out
                                 I've compiled five popular frontend... </p>
                             <p class="date"> 24th April,2023</p>
                         </div>
@@ -354,7 +376,7 @@
         </section>
 
         <!-- Testimonial page -->
-        <section id="testimonials">
+        <!-- <section id="testimonials">
             <header class="testimonial-header">
                 <h2> Testimonials </h2>
             </header>
@@ -365,7 +387,7 @@
                         <div class="slide swiper-slide">
                             <i class='bx bxs-quote-alt-left quote-icon1'></i>
                             <p> Working with Ishimwe Jean Baptiste was pleasure, his attention to detail, eye of design and passion are remarkable.
-                                Without a doubt, He is one of the best frontend engineers with good undestanding of modern tools and frameworks.
+                               
 
                             </p>
 
@@ -383,7 +405,7 @@
                 </div>
 
             </span>
-        </section>
+        </section> -->
 
         <!-- Contact page -->
         <section id="contact" class="contacts">
@@ -394,11 +416,14 @@
                 <p> Love to connect with me, Reach out to me via </p>
                 <div class="social-media2">
                     <a href="https://github.com/hbapte" target="_blank" rel="noopener"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/hbapte" target="_blank" rel="noopener"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://twitter.com/HBaptee" target="_blank" rel="noopener"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.Instagram.com/hbapte" target="_blank" rel="noopener"><i class='bx bxl-instagram'></i></i></a>
-                    <a href="https://www.linktr.ee/hbapte" target="_blank" rel="noopener"> <svg xmlns="http://www.w3.org/2000/svg" width="30"
-                            height="30" viewBox="0 0 24 24">
+                    <a href="https://www.linkedin.com/in/hbapte" target="_blank" rel="noopener"><i
+                            class='bx bxl-linkedin'></i></a>
+                    <a href="https://twitter.com/HBaptee" target="_blank" rel="noopener"><i
+                            class='bx bxl-twitter'></i></a>
+                    <a href="https://www.Instagram.com/hbapte" target="_blank" rel="noopener"><i
+                            class='bx bxl-instagram'></i></i></a>
+                    <a href="https://www.linktr.ee/hbapte" target="_blank" rel="noopener"> <svg
+                            xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
                             <path fill="#0ef"
                                 d="m13.736 5.853l4.005-4.117l2.325 2.38l-4.2 4.005h5.908v3.305h-5.937l4.229 4.108l-2.325 2.334l-5.74-5.769l-5.741 5.769l-2.325-2.325l4.229-4.108H2.226V8.121h5.909l-4.2-4.004l2.324-2.381l4.005 4.117V0h3.472zm-3.472 10.306h3.472V24h-3.472z" />
                         </svg></a>
@@ -412,15 +437,18 @@
                             <legend>Get in touch - send me a message </legend>
                             <div class="inputs">
                                 <div class="form-group">
-                                    <input type="text" id="names" name="user_name" required placeholder="Names" /><label for="mames">
+                                    <input type="text" id="names" name="user_name" required placeholder="Names" /><label
+                                        for="mames">
                                         Your Names </label>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" id="email" name="user_email" required placeholder="Email" /><label for="email">
+                                    <input type="email" id="email" name="user_email" required
+                                        placeholder="Email" /><label for="email">
                                         Email </label>
                                 </div>
                                 <div class="form-group">
-                                    <textarea id="message" name="user_project" placeholder="Message"></textarea> <label for="message">
+                                    <textarea id="message" name="user_project" placeholder="Message"></textarea> <label
+                                        for="message">
                                         message </label>
                                 </div>
 
@@ -430,11 +458,11 @@
                             </div>
                             <p class="contact__message" id="contact-message"></p>
                             <p class="error__message" id="error-message"></p>
-                            
+
                         </fieldset>
                     </form>
 
-                  
+
                 </div>
                 <div class="subscribe">
                     <p> You can also subscribe to my newsletter</p>
