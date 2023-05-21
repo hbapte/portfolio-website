@@ -168,6 +168,7 @@ body {
   font-weight: 700;
   background-color: var(--background-color2);
   border: 1px solid #0ef;
+  font-size: .9rem;
 
 } 
 /* For medium devices */
@@ -202,6 +203,8 @@ body {
   .nav__menu {
     width: initial;
   }
+
+
 }
 
 /* links */
