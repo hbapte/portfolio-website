@@ -85,6 +85,9 @@ body {
   cursor: pointer;
 }
 
+.nav__logo {
+  margin-left: -1.5rem;
+}
 /* Navigation for mobile devices */
 
 @media screen and (max-width: 900px) {
