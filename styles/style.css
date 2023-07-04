@@ -508,12 +508,12 @@ section {
   background: transparent;
   padding-top: 2px;
   font-size: 1.5rem;
-  color: #111;
+  color: #0ef;
 }
 
 .p-links i:hover,
 .p-links .material-symbols-outlined:hover {
-  color: #0ef;
+  color: #111;
   transform: scale(1.15);
 }
 
