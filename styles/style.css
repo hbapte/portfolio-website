@@ -530,11 +530,13 @@ section {
   display: flex;
   justify-content: space-between;
   font-weight: 600;
+  font-size: .8rem;
 }
 
 .used-tools mark {
   color: #fff;
   padding: 4px;
+  font-size: 0.8rem;
   background-color: #1f242d;
 }
 
