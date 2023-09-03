@@ -154,10 +154,10 @@ window.addEventListener('scroll', scrollActive)
   document.addEventListener('DOMContentLoaded', function () {
     var options = {
       strings: ["Frontend Developer", "Web Designer"],
-      typeSpeed: 200,
-      backSpeed: 200,
+      typeSpeed: 100,
+      backSpeed: 100,
       startDelay: 1000,
-      backDelay: 1000,
+      backDelay: 100,
       loop: true,
     };
 
