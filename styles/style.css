@@ -873,12 +873,12 @@ input {
   border: 1px solid rgb(160, 174, 192);
   padding: 0.9rem;
   color: #fff;
-  width: 19rem;
+  width: 30rem;
   font-size: 1rem;
 }
 
 textarea {
-  height: 6rem;
+  height: 10rem;
   font-size: 1rem;
   border-radius: 4px;
   background: transparent;
@@ -896,9 +896,9 @@ textarea {
 
 .submit {
   text-align: center;
-  color: rgba(255, 255, 255, 0.87);
-  border: 0.5px solid rgba(255, 255, 255, 0.726);
-  background: transparent;
+  
+  border: 0.5px solid var(--fourth-color);
+  background: var(--primary-color);
   cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
@@ -907,12 +907,13 @@ textarea {
 }
 
 .submit:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.664);
+  color: var(--primary-color);
+  background: transparent;
   transform: scale(1.02);
+  border-color: #0ef;
 }
 
-.subscribe {
+/* .subscribe {
   justify-content: center;
   align-items: center;
   margin: 0 2rem;
@@ -922,7 +923,7 @@ textarea {
   margin: 1.5rem 0 1rem 0;
   font-size: 1rem;
   text-align: left;
-}
+} */
 
 /* footer section  */
 footer {
@@ -931,7 +932,7 @@ footer {
   height: 30px;
 }
 hr {
-  opacity: 10%;
+  opacity: 20% !important;
 }
 
 footer p {
@@ -1098,7 +1099,7 @@ footer p {
   }
 
   /* testimonial  */
-
+/* 
   .testimonial {
     border: none;
     border-radius: 5px;
@@ -1118,7 +1119,7 @@ footer p {
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
-  }
+  } */
 
   /* contact  */
   .form {
