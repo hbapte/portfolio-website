@@ -605,6 +605,12 @@ section {
   font-size: 0.9rem;
 }
 
+.date {
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: .6rem !important;
+}
+
 .b-pic {
   width: 100%;
   border-radius: 0px 0px 4px 4px;
