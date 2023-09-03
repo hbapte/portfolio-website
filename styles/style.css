@@ -143,7 +143,7 @@ body {
 }
 
 .blur-header::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1000%;
   height: 100%;
@@ -160,7 +160,6 @@ body {
   color: #0ef;
 }
 
-
 .nav-resume {
   color: #0ef;
   padding: 2px 4px;
@@ -168,10 +167,9 @@ body {
   font-weight: 700;
   background-color: var(--background-color2);
   border: 1px solid #0ef;
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: left;
-
-} 
+}
 /* For medium devices */
 @media screen and (max-width: 768px) {
   .nav__menu {
@@ -191,7 +189,6 @@ body {
     display: none;
   }
 
-
   .nav-resume:hover {
     transform: scale(1.01);
   }
@@ -204,8 +201,6 @@ body {
   .nav__menu {
     width: initial;
   }
-
-
 }
 
 /* links */
@@ -405,7 +400,6 @@ section {
 
 .skill-header:hover {
   text-decoration: none;
-
 }
 
 .s-container {
@@ -468,7 +462,6 @@ section {
 
 .project-header:hover {
   text-decoration: none;
-
 }
 
 .p-container {
@@ -531,7 +524,7 @@ section {
   display: flex;
   justify-content: space-between;
   font-weight: 600;
-  font-size: .8rem;
+  font-size: 0.8rem;
   text-transform: capitalize;
 }
 
@@ -559,7 +552,6 @@ section {
 
 .blog-header:hover {
   text-decoration: none;
-
 }
 
 .blog-container {
@@ -610,7 +602,7 @@ section {
 .date {
   font-style: italic;
   text-transform: uppercase;
-  font-size: .6rem !important;
+  font-size: 0.6rem !important;
 }
 
 .b-pic {
@@ -790,7 +782,6 @@ img[class="t-pic"] {
 
 .contact-header:hover {
   text-decoration: none;
-
 }
 
 .contact-text {
@@ -988,10 +979,9 @@ footer p {
   }
 
   .intro {
-    max-width: 100%;  
-    margin:1rem 0;
-    font-size: .8rem;
-   
+    max-width: 100%;
+    margin: 1rem 0;
+    font-size: 0.9rem;
   }
 
   .title {
@@ -1027,12 +1017,12 @@ footer p {
 
   .timeline {
     margin: 1em;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
-   .timeline p:last-child {
-      display: none;
-   }
+  .timeline p:last-child {
+    display: none;
+  }
 
   .about-image {
     display: none;
@@ -1076,11 +1066,8 @@ footer p {
   }
 
   .time {
-    font-size: .7rem !important;
-  
+    font-size: 0.7rem !important;
   }
-
-
 
   /* Blog */
   .blog-container {
