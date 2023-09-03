@@ -981,7 +981,7 @@ footer p {
   .intro {
     max-width: 100%;
     margin: 1rem 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .title {
@@ -1001,6 +1001,8 @@ footer p {
   section {
     padding: 2em;
   }
+
+  
   /* about */
   .about {
     height: max-content;
@@ -1017,7 +1019,7 @@ footer p {
 
   .timeline {
     margin: 1em;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .timeline p:last-child {
