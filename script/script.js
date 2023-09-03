@@ -146,8 +146,26 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-// var typed = new Typed('.typed', {
-//     strings: ['Frontend Developer', 'Blogger'],
+
+
+
+// /*============== TYPEJS ===============*/
+ 
+  document.addEventListener('DOMContentLoaded', function () {
+    var options = {
+      strings: ["Frontend Developer", "Web Designer"],
+      typeSpeed: 200,
+      backSpeed: 200,
+      startDelay: 1000,
+      backDelay: 1000,
+      loop: true,
+    };
+
+    var typed = new Typed(".typed", options);
+  });
+
+  // var typed = new Typed('.typed', {
+//     strings: ['Frontend Developer', 'Frontend Developer'],
 //     typeSpeed: 200,
 //     backSpeed: 200,
 //     backDelay: 1000,
