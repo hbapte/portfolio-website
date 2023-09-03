@@ -1122,18 +1122,42 @@ footer p {
   } */
 
   /* contact  */
-  .form {
+  /* .form {
     justify-content: center;
   }
 
   .form-part {
     margin-top: 2rem;
-  }
+  } */
 
   .contact-text p {
     text-align: center;
     font-size: 0.9em;
   }
+
+
+  input {
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgb(160, 174, 192);
+    padding: 0.9rem;
+    color: #fff;
+    width: 20rem;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    height: 7rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    background: transparent;
+    color: #fff;
+    resize: none;
+    border: 1px solid rgb(160, 174, 192);
+    padding: 5px;
+  }
+
+
 
   .social-media2 i,
   .social-media2 svg {
