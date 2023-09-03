@@ -169,6 +169,7 @@ body {
   background-color: var(--background-color2);
   border: 1px solid #0ef;
   font-size: .9rem;
+  text-align: left;
 
 } 
 /* For medium devices */
@@ -362,7 +363,7 @@ section {
 }
 
 .timeline {
-  font-size: 15px;
+  font-size: 1rem;
   align-self: center;
   justify-self: center;
   margin: 1rem 0 0 -15rem;
@@ -1026,6 +1027,7 @@ footer p {
 
   .timeline {
     margin: 1em;
+    font-size: .8rem;
   }
 
    .timeline p:last-child {
