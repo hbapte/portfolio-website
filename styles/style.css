@@ -71,8 +71,9 @@ body {
   z-index: 100;
 }
 
-.nav {
+.nav-container {
   height: 2.7rem;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +98,7 @@ body {
     top: 0;
     right: -100%;
     background-color: hsl(0, 0%, 10%, 0.3);
-    width: 50%;
+    width: 55%;
     height: 100%;
     padding: 4rem 0 0 4rem;
     backdrop-filter: blur(24px);
@@ -163,24 +164,26 @@ body {
 
 .nav-resume {
   color: #0ef;
-  padding: .2rem .5rem;
+  padding: .3rem .6rem;
   margin-right: 1rem;
   font-weight: 700;
   background-color: var(--background-color2);
   border: 1px solid #0ef;
   font-size: 0.9rem;
+  border-radius: 2px;
   text-align: left;
 }
 /* For medium devices */
 @media screen and (max-width: 768px) {
   .nav__menu {
-    width: 55%;
-  }
+    width: 55% !important;
+  } 
 }
 
 /* For large devices */
 @media screen and (min-width: 900px) {
   .header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
   }
@@ -190,17 +193,49 @@ body {
     display: none;
   }
 
-  .nav-resume:hover {
-    transform: scale(1.01);
-  }
+ 
 
   .nav__list {
     flex-direction: row;
     column-gap: 3rem;
   }
 
-  .nav__menu {
-    width: initial;
+  /* .nav__menu {
+    width: initial
+  } */
+}
+
+/* For medium devices */
+@media screen and (max-width: 900px) {
+  .resume2 {
+    display: none;
+  }
+}
+
+.nav-resume:hover {
+  transform: scale(1.01);
+}
+
+.nav-resume2 {
+  color: #0ef;
+  padding: .3rem .6rem;
+  margin-right: 1rem;
+  font-weight: 700;
+  background-color: var(--background-color2);
+  border: 1px solid #0ef;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.nav-resume2:hover {
+  filter: grayscale(.3);
+  transition: ease-in-out;
+}
+
+@media screen and (min-width: 900px) {
+  .resume {
+    display: none;
   }
 }
 
@@ -256,26 +291,28 @@ section {
   max-width: 80%;
 }
 
-.social-media i {
-  display: inline-flex;
-  align-self: center;
-  justify-self: center;
-  font-size: 2 rem;
-}
 
-.social-media a {
+
+.social-media a{
   display: inline-flex;
   justify-self: center;
   align-self: center;
   margin: 2px;
   padding: 2px;
-  width: 30px;
-  height: 30px;
+  width: 2rem;
+  height: 2rem;
   font-size: 1.3rem;
   border: #0ef solid 1px;
   border-radius: 50%;
   text-decoration: none;
   color: var(--primary-color);
+}
+
+.social-media a i {
+  display: inline-flex;
+  margin: auto;
+  align-items: center;
+  justify-self: center;
 }
 
 .social-media a:hover {
@@ -826,17 +863,15 @@ img[class="t-pic"] {
 .social-media2 i {
   font-size: 30px;
   display: flex;
+  margin: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin: 1px;
+  /* margin: 1px; */
   padding: 1px;
 }
 
-.social-media2 svg {
-  margin: 1px;
-  padding: 1px;
-}
+
 
 .social-media2 a {
   display: inline-flex;
@@ -1069,6 +1104,7 @@ footer p {
 
   .skill-header {
     margin: 1em;
+    text-transform: uppercase;
   }
 
   .skills h4 {
