@@ -153,7 +153,7 @@ window.addEventListener('scroll', scrollActive)
  
   document.addEventListener('DOMContentLoaded', function () {
     var options = {
-      strings: ["Frontend Developer", "Web Designer"],
+      strings: ["Software Engineer", "Frontend Developer"],
       typeSpeed: 100,
       backSpeed: 100,
       startDelay: 1000,
